@@ -44,7 +44,8 @@ count_placeholder = st.empty()
 
 if start:
     # You can use a webcam (0) or replace with a video file
-    camera = cv2.VideoCapture("people3.mov")
+    #camera = cv2.VideoCapture("people3.mov")
+    camera = cv2.VideoCapture(0)
     if not camera.isOpened():
         st.error("🚫 Could not open camera or video. Please check permissions or path.")
     else:
